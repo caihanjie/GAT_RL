@@ -29,8 +29,6 @@ Our framework operates through several integrated components:
 
 ## Usage
 
-### Basic Usage
-
 ```python
 from pvt_gat import PVTGATOptimizer
 
@@ -49,16 +47,6 @@ optimizer = PVTGATOptimizer(
     }
 )
 
-# Run optimization
-results = optimizer.optimize(
-    max_iterations=10000,
-    attention_sampling_k=5  # Number of corners to sample in each iteration
-)
-```
-
-### Advanced Configuration
-
-```python
 # Custom attention mechanism parameters
 optimizer.configure_attention(
     guided_weight=0.8,  # β parameter in the paper
@@ -73,7 +61,14 @@ optimizer.configure_rl(
     buffer_size=10000,
     batch_size=64
 )
+
+# Run optimization
+results = optimizer.optimize(
+    max_iterations=10000,
+    attention_sampling_k=5  # Number of corners to sample in each iteration
+)
 ```
+
 
 ## Experiment Results
 
