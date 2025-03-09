@@ -79,12 +79,34 @@ These training dynamics correlate directly with the final performance metrics, w
 
 The radar plot demonstrates relative performance across eight critical metrics. GAT_MTRL shows superior overall performance, particularly in Gain (135-140dB), PM (55°-65°), and Power efficiency. RGCN_RL and PVT_Sizing exhibit strengths in specific metrics (PSRP, TC) but lack consistency across all parameters.
 
+### Monte Carlo Simulation Results
+
+<p align="center">
+  <img src="plots_results/mc_plots.png" width="800">
+  <br>
+  <em>Fig. 6: Monte Carlo simulation performance distribution comparison</em>
+</p>
+
+The Monte Carlo simulation results demonstrate the robustness of each optimization method through histograms and statistical data:
+
+- **GBW (Gain-Bandwidth Product)**: GAT_MTRL shows a concentrated distribution around 1.75MHz with a standard deviation of only 0.05MHz and a low outlier ratio of 4/560. In comparison, RoSE has a higher mean (1.86MHz) but an outlier ratio of 9/560. RGCN_RL and PVT_Sizing show more dispersed distributions with lower center frequencies.
+
+- **PSRP (Power Supply Rejection Ratio)**: Three methods achieve the target of below -80dB, with RGCN_RL performing best (-94.97dB). However, GAT_MTRL shows the most concentrated distribution (standard deviation of only 1.56dB) with the lowest outlier ratio (13/560).
+
+- **Gain**: GAT_MTRL exhibits excellent and stable performance at 140.01dB with a standard deviation of only 0.50dB and an outlier ratio of 9/560. RGCN_RL and PVT_Sizing also perform well, but RoSE shows significantly lower gain (129.17dB).
+
+- **Power**: GAT_MTRL demonstrates superior power efficiency (261.50μW), 62.5% lower than the closest competitor, while maintaining zero outliers. RGCN_RL and PVT_Sizing consume more power (>1000μW) but have low outlier ratios.
+
+- **Settling Time**: GAT_MTRL achieves the fastest response time (0.53μs) with a standard deviation of only 0.04μs. RoSE and RGCN_RL have settling times of 2.39μs and 59.71μs respectively, significantly slower than GAT_MTRL.
+
+These Monte Carlo simulation results further validate the robustness of the GAT_MTRL method under process, voltage, and temperature variations, particularly in key performance metrics such as gain, power consumption, and response speed. Compared to other methods, GAT_MTRL not only achieves better average performance but also significantly reduces performance fluctuations, ensuring reliable circuit operation under various working conditions.
+
 ### Detailed Performance Distribution
 
 <p align="center">
   <img src="plots_results/detailed_performance.png" width="800">
   <br>
-  <em>Fig. 6: Box plots showing performance distribution across PVT corners</em>
+  <em>Fig. 7: Box plots showing performance distribution across PVT corners</em>
 </p>
 
 Statistical analysis of the performance distribution reveals:
@@ -117,49 +139,49 @@ These results validate our framework's effectiveness in achieving robust circuit
 <p align="center">
   <img src="plots_results/corner_detailed_comparison_dcgain.png" width="800">
   <br>
-  <em>Fig. 7: DC Gain comparison across PVT corners</em>
+  <em>Fig. 8: DC Gain comparison across PVT corners</em>
 </p>
 
 <p align="center">
   <img src="plots_results/corner_detailed_comparison_phase_margin_(deg).png" width="800">
   <br>
-  <em>Fig. 8: Phase Margin comparison across PVT corners</em>
+  <em>Fig. 9: Phase Margin comparison across PVT corners</em>
 </p>
 
 <p align="center">
   <img src="plots_results/corner_detailed_comparison_PSRP.png" width="800">
   <br>
-  <em>Fig. 9: PSRP comparison across PVT corners</em>
+  <em>Fig. 10: PSRP comparison across PVT corners</em>
 </p>
 
 <p align="center">
   <img src="plots_results/corner_detailed_comparison_cmrrdc.png" width="800">
   <br>
-  <em>Fig. 10: CMRR comparison across PVT corners</em>
+  <em>Fig. 11: CMRR comparison across PVT corners</em>
 </p>
 
 <p align="center">
   <img src="plots_results/corner_detailed_comparison_Power.png" width="800">
   <br>
-  <em>Fig. 11: Power consumption comparison across PVT corners</em>
+  <em>Fig. 12: Power consumption comparison across PVT corners</em>
 </p>
 
 <p align="center">
   <img src="plots_results/corner_detailed_comparison_Active_Area.png" width="800">
   <br>
-  <em>Fig. 12: Active area comparison across PVT corners</em>
+  <em>Fig. 13: Active area comparison across PVT corners</em>
 </p>
 
 <p align="center">
   <img src="plots_results/corner_detailed_comparison_TC.png" width="800">
   <br>
-  <em>Fig. 13: Temperature coefficient comparison across PVT corners</em>
+  <em>Fig. 14: Temperature coefficient comparison across PVT corners</em>
 </p>
 
 <p align="center">
   <img src="plots_results/corner_detailed_comparison_settlingTime.png" width="800">
   <br>
-  <em>Fig. 14: Settling time comparison across PVT corners</em>
+  <em>Fig. 15: Settling time comparison across PVT corners</em>
 </p>
 
 
