@@ -1,7 +1,7 @@
 # PVT-GAT: Robust Circuit Optimization Framework using Graph Attention and Multi-Task RL
 
 <p align="center">
-  <img src="assets/framework_overview.png" width="800">
+  <img src="assets/overview.png" width="800">
 </p>
 
 This repository contains the implementation of our paper: **"PVT-GAT: A Robust Circuit Optimization Framework via Graph Attention Networks and Multi-Task Reinforcement Learning"**.
@@ -34,25 +34,25 @@ We evaluated our framework against state-of-the-art baselines on a three-stage o
 ### Training Convergence Analysis
 
 <p align="center">
-  <img src="plots_results/GAT_MTRL.png" width="600">
+  <img src="plots_results/GAT_MTRL1.png" width="600">
   <br>
   <em>Fig. 1: PVT Corner Rewards vs Training Steps (GAT_MTRL)</em>
 </p>
 
 <p align="center">
-  <img src="plots_results/PVT_Sizing.png" width="600">
+  <img src="plots_results/PVT_Sizing1.png" width="600">
   <br>
   <em>Fig. 2: PVT Corner Rewards vs Training Steps (PVT_Sizing)</em>
 </p>
 
 <p align="center">
-  <img src="plots_results/RGCN_RL.png" width="600">
+  <img src="plots_results/RGCN_RL1.png" width="600">
   <br>
   <em>Fig. 3: PVT Corner Rewards vs Training Steps (RGCN_RL)</em>
 </p>
 
 <p align="center">
-  <img src="plots_results/RoSE.png" width="600">
+  <img src="plots_results/RoSE1.png" width="600">
   <br>
   <em>Fig. 4: PVT Corner Rewards vs Training Steps (RoSE)</em>
 </p>
@@ -72,7 +72,7 @@ These training dynamics correlate directly with the final performance metrics, w
 ### Overall Performance Comparison
 
 <p align="center">
-  <img src="plots_results/performance_radar_standalone.png" width="600">
+  <img src="plots_results/performance_radar.png" width="600">
   <br>
   <em>Fig. 5: Radar plot comparing performance metrics across different optimization methods</em>
 </p>
@@ -137,49 +137,49 @@ These results validate our framework's effectiveness in achieving robust circuit
 ### Full Specification under PVT Variations
 
 <p align="center">
-  <img src="plots_results/corner_detailed_comparison_dcgain.png" width="800">
+  <img src="plots_results/dcgain.png" width="800">
   <br>
   <em>Fig. 8: DC Gain comparison across PVT corners</em>
 </p>
 
 <p align="center">
-  <img src="plots_results/corner_detailed_comparison_phase_margin_(deg).png" width="800">
+  <img src="plots_results/phase_margin_(deg).png" width="800">
   <br>
   <em>Fig. 9: Phase Margin comparison across PVT corners</em>
 </p>
 
 <p align="center">
-  <img src="plots_results/corner_detailed_comparison_PSRP.png" width="800">
+  <img src="plots_results/PSRP.png" width="800">
   <br>
   <em>Fig. 10: PSRP comparison across PVT corners</em>
 </p>
 
 <p align="center">
-  <img src="plots_results/corner_detailed_comparison_cmrrdc.png" width="800">
+  <img src="plots_results/cmrrdc.png" width="800">
   <br>
   <em>Fig. 11: CMRR comparison across PVT corners</em>
 </p>
 
 <p align="center">
-  <img src="plots_results/corner_detailed_comparison_Power.png" width="800">
+  <img src="plots_results/Power.png" width="800">
   <br>
   <em>Fig. 12: Power consumption comparison across PVT corners</em>
 </p>
 
 <p align="center">
-  <img src="plots_results/corner_detailed_comparison_Active_Area.png" width="800">
+  <img src="plots_results/Active_Area.png" width="800">
   <br>
   <em>Fig. 13: Active area comparison across PVT corners</em>
 </p>
 
 <p align="center">
-  <img src="plots_results/corner_detailed_comparison_TC.png" width="800">
+  <img src="plots_results/TC.png" width="800">
   <br>
   <em>Fig. 14: Temperature coefficient comparison across PVT corners</em>
 </p>
 
 <p align="center">
-  <img src="plots_results/corner_detailed_comparison_settlingTime.png" width="800">
+  <img src="plots_results/settlingTime.png" width="800">
   <br>
   <em>Fig. 15: Settling time comparison across PVT corners</em>
 </p>
